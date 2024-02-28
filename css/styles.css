@@ -48,16 +48,19 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
+    padding: 16px 0 16px 16px;
 }
 
 .header-navigation {
+ 
   display: flex;
   align-items: center;
 }
 
 .header-menu-list {
-  display: flex;
-  gap: 40px;
+  display: none;
+  /* display: flex;
+  gap: 40px; */
 }
 
 .logo-blu {
@@ -99,6 +102,7 @@ color: #404BBF;
  
 }
  .header-address {
+  display: none;
   color: #434455;
   font-style: normal;
   margin-left: auto;
@@ -122,7 +126,18 @@ color: #404BBF;
   display: flex;
   gap: 40px;
  }
-
+ .heder-menu-btn {
+  padding: 0;
+    line-height: 0;
+    background-color: fuchsia;
+    cursor: pointer;
+    border: none;
+    /* fill: #2F2F37; */
+ }
+ .header-menu-btn-icon{
+  /* fill: #2F2F37; */
+  
+ }
 /* Hero 1st sector */
 .hero {
   background-color: #2E2F42;
@@ -431,6 +446,7 @@ color: #404BBF;
 .portfolio-list {
   display: flex; 
   flex-direction: column;
+  justify-content:flex-start;
   gap: 24px;
   row-gap: 48px;
   width: 288px;
@@ -438,6 +454,8 @@ color: #404BBF;
 }
 .portfolio-item{
   position: relative;
+  width: 288px;
+  
 
   
 }
@@ -872,6 +890,27 @@ display: inline-flex;
       padding: 0 16px;
       margin: 0 auto;
  }
+ .header-menu-list{
+  display: flex;
+  gap: 40px;
+  margin-right: 121px;
+ }
+ .header-logo{
+  margin-right: 120px;
+ }
+ .header-address{
+  display: flex;
+ }
+ .address-list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0;
+ }
+ .hero{
+  width: 100%;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/Dark-bg-tabl-min.jpg);
+ }
  .feateres-list{
   display: flex;
   flex-direction: row;
@@ -907,9 +946,46 @@ display: inline-flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
+  width: 100%;
   margin: 0;
+ }
+ .portfolio-item{
+  width: 356px;
+ }
+ .footer-all{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 72px 24px;
+  align-items: flex-start;
 
  }
+ .footer-smlinks{
+  align-items: start;
+ }
+ .container-footer{
+  margin: 0 0 0 108px;
+ }
+ .footer-logo{
+ }
+ .links-cont-footer{
+  margin-bottom: 0;
+ }
+ .subs-name{
+  text-align: left;
+ }
+ .subs-form{
+  margin-left: 108px;
+  text-align: left;
+ }
+ .subs-form-email{
+  flex-direction: row;
+  gap: 24px;
+ }
+
+
 }
  
  @media screen and (min-width: 1158px) {
@@ -918,6 +994,20 @@ display: inline-flex;
      padding: 0 15px;
      margin: 0 auto;
    }
+     .header-menu-list{
+      display: flex;
+      gap: 40px;
+     }
+     .header-address{
+      display: flex;
+     }
+     .header-menu-list{
+      display: flex;
+     }
+
+
+
+
      .feateres {
        padding: 120px 0 120px 0;
   
@@ -925,10 +1015,36 @@ display: inline-flex;
   
      .feateres-list {
        flex-direction: row;
+       gap: 24px;
+       width: 100%;
   
      }
+     .feateres-subtitle{
+      color: var(--NAVY-BLUE, #2E2F42);
+        /* Header 3 */
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        /* 120% */
+        letter-spacing: 0.02em;
+     }
+     .feateres-item-text{
+      color: var(--SLATE, #434455);
+        /* Body */
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        /* 150% */
+        letter-spacing: 0.02em;
+     }
   
-     .feateres-item {}
+     .feateres-item {
+      width: 264px;
+     }
   
      .icon-cont {
       display: flex;
@@ -953,12 +1069,55 @@ display: inline-flex;
      .portfolio-list {
        display: flex;
        flex-wrap: wrap;
+       flex-direction: row;
+       
        row-gap: 48px;
        column-gap: 24px;
-       width: 360px;
-       margin: 0 auto;
+       width: 100%;
+       /* margin: 0 auto; */
      }
    .portfolio-item{
+    width: 360px;
 
    }
+     .footer{
+      padding: 100px 0;
+     }
+     .footer-text{
+      color: var(--CLOUD, #F4F4FD);
+        /* Body */
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        /* 150% */
+        letter-spacing: 0.02em;
+        width: 264px;
+     }
+     .footer-sl{
+      text-align: left;
+     }
+     .container-footer{
+      align-items: baseline;
+      margin: 0;
+     }
+     .footer-smlinks{
+      margin-left: 120px;
+      align-items: flex-start;
+     }
+     .footer-all{
+      align-items: baseline;
+      flex-direction: row;
+     }
+         .subs-form {
+           margin-left: 80px;
+         }
+         .subs-form-email{
+          flex-direction: row;
+         }
+         .subs-name{
+          text-align: left;
+         }
+    
   }
